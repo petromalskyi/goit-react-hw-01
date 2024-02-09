@@ -8,7 +8,6 @@
 }
 
 .img {
-  display: block;
   margin: auto;
   width: 50%;
   height: auto;
@@ -18,26 +17,22 @@
 }
 
 .name {
-  margin: 0;
+  margin-bottom: 10px;
   text-align: center;
-  font-family: 'DM Sans', sans-serif;
   font-size: 50px;
-  font-style: normal;
   font-weight: 700;
 }
 
 .text {
-  margin: 10;
+  margin-bottom: 15px;
   text-align: center;
   font-size: 32px;
-  font-weight: 400;
   color: rgb(0, 0, 0, 0.5);
 }
 
 .list {
   margin: 0;
   padding: 0;
-  list-style: none;
   display: flex;
 }
 
@@ -50,14 +45,14 @@
   text-align: center;
 }
 
-.span-first {
+.spanFirst {
   padding: 10px;
   font-family: 'DM Sans', sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
 }
-.span-second {
+.spanSecond {
   padding: 10px;
   font-size: 34px;
   font-style: normal;

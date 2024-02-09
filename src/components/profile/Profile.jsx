@@ -1,4 +1,4 @@
-import './Profile.css';
+import css from './Profile.module.css';
 
 export const Profile = ({
   avatar = 'https://cdn-icons-png.flaticon.com/512/2922/2922506.png',
@@ -8,26 +8,26 @@ export const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className="profile">
-      <div>
-        <img className="img" src={avatar} alt="User avatar" />
-        <p className="name">{name}</p>
-        <p className="text">@{tag}</p>
-        <p className="text">{location}</p>
-      </div>
+    <div className={css.profile}>
+      <>
+        <img className={css.img} src={avatar} alt="User avatar" />
+        <p className={css.name}>{name}</p>
+        <p className={css.text}>@{tag}</p>
+        <p className={css.text}>{location}</p>
+      </>
 
-      <ul className="list">
-        <li className="item">
-          <span className="span-first">Followers</span>
-          <span className="span-second">{followers}</span>
+      <ul className={css.list}>
+        <li className={css.item}>
+          <span className={css.spanFirst}>Followers</span>
+          <span className={css.spanSecond}>{followers}</span>
         </li>
-        <li className="item">
-          <span className="span-first">Views</span>
-          <span className="span-second">{views}</span>
+        <li className={css.item}>
+          <span className={css.spanFirst}>Views</span>
+          <span className={css.spanSecond}>{views}</span>
         </li>
-        <li className="item">
-          <span className="span-first">Likes</span>
-          <span className="span-second">{likes}</span>
+        <li className={css.item}>
+          <span className={css.spanFirst}>Likes</span>
+          <span className={css.spanSecond}>{likes}</span>
         </li>
       </ul>
     </div>

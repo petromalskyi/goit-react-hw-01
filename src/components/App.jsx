@@ -1,5 +1,7 @@
-import { Profile } from './profile/Profile';
+import { Profile } from './Profile/Profile';
+import { FriendList } from './friendList/FriendList';
 import userData from '../userData.json';
+import friends from '../friends.json';
 
 export function App() {
   return (
@@ -9,9 +11,9 @@ export function App() {
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}
-        // image="https://cdn-icons-png.flaticon.com/512/2922/2922506.png"
         stats={userData.stats}
       />
+      <FriendList />
     </>
   );
 }
