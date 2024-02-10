@@ -1,6 +1,7 @@
-import { Profile } from './profile/Profile';
-import { FriendList } from './friendlist/FriendList';
-import userData from '../userData.json';
+import { Profile } from '../profile/Profile';
+import { FriendList } from '../friendlist/FriendList';
+import userData from '../../userData.json';
+import friends from '../../friends.json';
 
 export function App() {
   return (
@@ -12,7 +13,7 @@ export function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList />
+      <FriendList data={friends} />
     </>
   );
 }
