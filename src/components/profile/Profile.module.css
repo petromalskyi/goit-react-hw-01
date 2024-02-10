@@ -1,5 +1,7 @@
 .profile {
   margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
   padding-top: 10px;
   width: 600px;
   border: 4px solid black;
